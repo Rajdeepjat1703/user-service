@@ -1,5 +1,4 @@
 package com.webknot.user_service.model;
-
 import jakarta.persistence.*;
 import lombok.*;
 import com.fasterxml.jackson.annotation.JsonBackReference;
