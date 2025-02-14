@@ -1,4 +1,5 @@
 package com.webknot.user_service.model;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -18,6 +19,7 @@ public class TravelHistory {
     private Long sourceStation;
     private Long destinationStation;
     private double fare;
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     private LocalDateTime travelDate;
 
     private LocalDateTime checkInTime;
